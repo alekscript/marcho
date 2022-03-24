@@ -28,3 +28,18 @@ a{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.title{
+    text-align: center;
+    font-size: 48px;
+    line-height: 65px;
+    color: $title-color;
+    @extend %roboto-700;
+}
+
+.text{
+    text-align: center;
+    color: $default-color;
+    max-width: 570px;
+    margin: 0 auto 55px;
+}
