@@ -181,7 +181,8 @@
 .top-slider{
     background-image: url(../images/top_slider_bg.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-size: contain;
+    background-position: center;
     background-color: $bg;
     padding-top: 65px;
     padding-bottom: 43px;
@@ -254,7 +255,7 @@
      background-image: url(../images/categiries-bg.png);
      background-repeat: no-repeat;
      background-size: contain;
-     background-position: 40% center;
+     background-position: center center;
 }
 
 .info{
@@ -360,6 +361,51 @@
     }
     &:nth-child(4){
         color: #34c3ff;
+    }
+}
+
+.video-fashion{
+    background-color: #f6f6f6;
+    background-image: url(../images/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 125px 0;
+    &__inner{
+        display: flex;
+    }
+    &__popup{
+        margin-right: 60px;
+        max-width: 530px;
+        height: 480px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &__content{
+        max-width: 570px;
+    }
+    &__subtitle{
+        font-size: 22px;
+        color: $accent-color;
+        line-height: 26px;
+        padding-top: 70px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__title{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    &__text{
+        margin-bottom: 55px;
+    }
+    &__link{
+        @extend %btn;
     }
 }
 
