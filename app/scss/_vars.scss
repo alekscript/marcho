@@ -1,0 +1,30 @@
+$default-color: #8d8d8d;
+$accent-color: #fe3e57;
+$title-color: #29282d;
+$bg: #f6f6f6;
+
+%roboto-400{
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-style: normal;
+}
+%roboto-500{
+    font-family: 'Roboto-Medium';
+    font-weight: 500;
+    font-style: normal;
+}
+%roboto-700{
+    font-family: 'Roboto-Medium';
+    font-weight: 700;
+    font-style: normal;
+}
+%quicksand-400{
+    font-family: 'Quicksand-Regular';
+    font-weight: 400;
+    font-style: normal;
+}
+%quicksand-500{
+    font-family: 'Quicksand-Medium';
+    font-weight: 500;
+    font-style: normal;
+}
