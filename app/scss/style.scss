@@ -7,6 +7,9 @@
 
 .header{
     padding: 40px 0;
+    &--bg{
+        background-color: $bg;
+    }
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -838,9 +841,41 @@
         display: inline-block;
         color: $accent-color;
     }
+    &__text{
+        margin-bottom: 25px;
+    }
 }
 
-
+.error-page{
+    padding: 110px 0 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        max-width: 570px;
+        width: 100%;
+    }
+    &__title{
+        color: #28384f;
+        @extend %roboto-700;
+        font-size: 48px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+    &__text{
+        max-width: 470px;
+        font-size: 16px;
+        line-height: 26px;
+        @extend %quicksand-500;
+        margin-bottom: 55px;
+    }
+    &__link{
+        @extend %btn;
+        @extend %roboto-400;
+    }
+}
 
 
 
