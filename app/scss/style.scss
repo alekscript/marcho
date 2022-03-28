@@ -175,6 +175,67 @@
         margin-left: 25px;
     }
 }
+
+.top{
+    &__container{
+        max-width: 1700px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        padding: 120px 0 130px;
+        text-align: center;    
+    }
+}
+.breadcrumbs{
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 25px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/home_icon.png);
+        background-repeat: no-repeat;
+        left: 0;
+        top: 4px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        font-size: 16px;
+        color: #727272;
+        padding-right: 40px;
+        position: relative;
+        @extend %quicksand-500;
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url(../images/angle_right.png);
+            background-repeat: no-repeat;
+            width: 9px;
+            height: 10px;
+            right: 15px;
+            top: 9px;
+        }
+        &:last-child{
+            color: $accent-color;
+            padding-right: 0;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    &__link{
+        color: inherit;
+    }
+}
+
 .top-slider--container{
     max-width: 1560px;
 }
@@ -727,6 +788,58 @@
     }
 
 }
+
+.modal{
+    max-width: 570px;
+    margin: 0 auto 115px;
+    padding-top: 100px;
+    &__links{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__link{
+        color: #909090;
+        @extend %roboto-400;
+        font-size: 22px;
+        margin: 0 30px;
+        &--active{
+            color: #fe3e57;
+        }
+    }
+    &__label{
+        display: block;
+        margin-bottom: 30px;
+    }
+    &__input{
+        display: block;
+        width: 100%;
+        background-color: $bg;
+        color: $title-color;
+        margin-top: 4px;
+        height: 60px;
+        padding: 0 15px;
+    }
+    &__checkbox{
+        all: revert;
+    }
+    &__btn{
+        background-color: $title-color;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @extend %roboto-400;
+        padding: 14px 0;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+    &__password{
+        margin-top: 20px;
+        display: inline-block;
+        color: $accent-color;
+    }
+}
+
 
 
 
