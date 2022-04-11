@@ -45,3 +45,49 @@ a{
     max-width: 570px;
     margin: 0 auto 55px;
 }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    &__list{
+        display: flex;
+        padding: 0 35px;
+    }
+    &__item{
+       padding: 0 15px;
+    }
+    &__link--active{
+        color: $accent-color;
+    }
+    &__arrows{
+        text-transform: uppercase;
+        position: relative;
+    }
+    &__prev{
+        padding-left: 15px;
+        &::before{
+            position: absolute;
+            content: '';
+            background-repeat: no-repeat;
+            background-image: url(../images/angle_left.png);
+            width: 6px;
+            height: 11px;
+            left: 0;
+            top: 9px;
+        }
+    }
+    &__next{
+        padding-right: 15px;
+        &::after{
+            position: absolute;
+            content:'';
+            background-repeat: no-repeat;
+            background-image: url(../images/angle_right-2.png);
+            width: 6px;
+            height: 11px;
+            right: 0;
+            top: 9px;
+        }
+    }
+}
