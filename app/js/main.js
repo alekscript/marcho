@@ -1,4 +1,23 @@
 $(function (){
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false
+  });
+  $('.product-slide__big').slick({
+    asNavFor: '.product-slide__thumb',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: false,
+    arrows: false,
+    fade: true
+  });
+});
+
+$(function (){
   $('.shop-content__filter-btn').on('click', function(){
     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
     $(this).addClass('shop-content__filter-btn--active');
@@ -14,7 +33,7 @@ $(function (){
 });
 
 $(function () {
-  $('.select-styler').styler();
+  $('.select-styler, .product-filter__num').styler();
 });
 
 $(function(){
